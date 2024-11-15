@@ -6,6 +6,10 @@ class TestZAlgorithm(unittest.TestCase):
     def test_basic_pattern(self):
         result = z_algorithm("aabcaabxaaaz")
         self.assertEqual(result, [12, 1, 0, 0, 3, 1, 0, 0, 2, 2, 1, 0])
+    
+    def test_difficult_pattern(self):
+        result = z_algorithm("aaabddsaaabfdsssfaaannfllssssaaaaaaanffssssakeuiqqqqqudfallaaababababaljalsduishfafafkafjneedlehaystackneedlehaystackblahblahablajfalfjdkfjffqqqdaoffahaystackneedlewwawaaasfwwwfjakforwadjfkjdlsfj")
+        self.assertEqual(result, [195, 2, 1, 0, 0, 0, 0, 4, 2, 1, 0, 0, 0, 0, 0, 0, 0, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 4, 2, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
     def test_periodic_pattern(self):
         result = z_algorithm("aabaabaab")
