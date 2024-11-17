@@ -1,5 +1,4 @@
 from typing import List, TypeVar
-from utils.swap import swap
 
 # Generic type
 T = TypeVar('T')
